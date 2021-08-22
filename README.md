@@ -1,4 +1,4 @@
-# Compose the container
+# Compose the container :smiling_face_with_three_hearts:
 docker-compose -f docker-compose-ubuntu-zabbix-psql-nginx.yml up -d
 
 # Files-Keys References
