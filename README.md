@@ -38,7 +38,7 @@ Change the zabbix-agent interface for zabbix-server to use Docker DNS "zabbix-ag
 |Password|zabbix|refer to .POSTGRES_PASSWORD|
 
 # (Optional) Grafana - Install Zabbix Plugin
-Zabbix Plugin is not necessary but is good to have as it will help to get better query perfomance rather thn just the SQL DB itself. 
+Zabbix Plugin is not necessary but is good to have as it will help to get better query perfomance rather than just the SQL DB datasource. 
 ```
 docker container exec -it <container_name> bash
 grafana-cli plugins install alexanderzobnin-zabbix-app
