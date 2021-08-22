@@ -59,7 +59,8 @@ create a dedicated API user in Zabbix
 |Group|No access to the frontend|
 |Permission Role|User Role|
 
-|![image](https://user-images.githubusercontent.com/83763465/130352607-0a6393d0-4aea-4ca7-acc4-1875122cb16b.png)|![image](https://user-images.githubusercontent.com/83763465/130352683-36d6bbda-2bc1-4767-bc28-1dcbd206374b.png)|
+![image](https://user-images.githubusercontent.com/83763465/130352607-0a6393d0-4aea-4ca7-acc4-1875122cb16b.png){ width=50% }
+![image](https://user-images.githubusercontent.com/83763465/130352683-36d6bbda-2bc1-4767-bc28-1dcbd206374b.png){ width=50% }
 
 
 ![image](https://user-images.githubusercontent.com/83763465/130352186-387ca46a-e2bc-4a20-8820-a769ae76c486.png)
