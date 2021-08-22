@@ -16,8 +16,8 @@ Change the zabbix-agent interface for zabbix-server to use Docker DNS "zabbix-ag
 
 ## Install Zabbix Plugin in Grafana
 <code>
-  docker container stop <container_name><br />
-  docker container start <container_name><br />
+  docker container stop <container_name>
+  docker container start <container_name>
 </code>
 ![image](https://user-images.githubusercontent.com/83763465/130350708-1e638cae-f8b5-40e0-8b76-5440802d60ae.png)
 
