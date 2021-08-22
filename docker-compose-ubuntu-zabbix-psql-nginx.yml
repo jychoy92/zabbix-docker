@@ -147,6 +147,7 @@ services:
    - ./grafana/var/lib/grafana:/var/lib/grafana:rw
   networks:
    zbx_net_frontend:
+   zbx_net_backend:
 
 networks:
   zbx_net_frontend:
