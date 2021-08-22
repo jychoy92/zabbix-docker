@@ -4,8 +4,10 @@ Change the zabbix-agent interface for zabbix-server to use DNS "zabbix-agent" (d
 
 ## Zabbix
 http://<host_ip>
+
 Admin/zabbix
 
 ## Grafana
 http://<host_ip>:3000
+
 admin/admin
