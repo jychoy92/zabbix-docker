@@ -52,7 +52,7 @@ Enable the Zabbix Plugin
 
 
 ## (Optional) Grafana - Add Datasource (Zabbix Plugin) 
-create a dedicated API user in Zabbix
+* Create a dedicated API user in Zabbix *
 |Item|Value|
 |----|----|
 |Username|grafana-api|
@@ -62,9 +62,8 @@ create a dedicated API user in Zabbix
 <img src="https://user-images.githubusercontent.com/83763465/130352607-0a6393d0-4aea-4ca7-acc4-1875122cb16b.png" width="40%"> <img src="https://user-images.githubusercontent.com/83763465/130352683-36d6bbda-2bc1-4767-bc28-1dcbd206374b.png" width="40%" >
 ![image](https://user-images.githubusercontent.com/83763465/130353457-9999fc19-4273-4aa1-b423-ab6df875a133.png)
 
+![image](https://user-images.githubusercontent.com/83763465/130353543-22740c77-0bc2-4ddf-b743-c174d519bb4c.png)
 
-
-![image](https://user-images.githubusercontent.com/83763465/130352186-387ca46a-e2bc-4a20-8820-a769ae76c486.png)
 http://<zabbix_url>/api_jsonrpc.php
 
 
