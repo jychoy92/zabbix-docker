@@ -1,3 +1,7 @@
+## Compose the container
+docker-compose -f docker-compose-ubuntu-zabbix-psql-nginx.yml up -d
+
+## File Keys References
 | File  | Reference |
 | ------------- | ------------- |
 | .env_agent  | Zabbix Agent Environment Variables |
@@ -6,8 +10,6 @@
 | .env_web  | Web Server Environment Variables  |
 | .POSTGRES_USER  | Postgres SQL User  |
 | .POSTGRES_PASSWORD  | Postgres SQL Password  |
-
-docker-compose -f docker-compose-ubuntu-zabbix-psql-nginx.yml up -d
 
 ## Zabbix
 http://<host_ip>
