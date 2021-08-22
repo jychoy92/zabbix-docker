@@ -19,8 +19,6 @@ Change the zabbix-agent interface for zabbix-server to use Docker DNS "zabbix-ag
 docker container exec -it <container_name> bash
 grafana-cli plugins install alexanderzobnin-zabbix-app
 exit
-docker container restart <container_name>
+docker-compose -f docker-compose-ubuntu-zabbix-psql-nginx.yml restart
 ```
-
-![image](https://user-images.githubusercontent.com/83763465/130350708-1e638cae-f8b5-40e0-8b76-5440802d60ae.png)
-
+![image](https://user-images.githubusercontent.com/83763465/130351264-1b8f07c8-90f6-40b7-9c37-9f47126351e6.png)
