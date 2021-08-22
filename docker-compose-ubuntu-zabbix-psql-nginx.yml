@@ -120,9 +120,9 @@ services:
   image: postgres:13-alpine
   volumes:
    - ./zbx_env/var/lib/postgresql/data:/var/lib/postgresql/data:rw
-   - ./.ZBX_DB_CA_FILE:/run/secrets/root-ca.pem:ro
-   - ./.ZBX_DB_CERT_FILE:/run/secrets/server-cert.pem:ro
-   - ./.ZBX_DB_KEY_FILE:/run/secrets/server-key.pem:ro
+#   - ./.ZBX_DB_CA_FILE:/run/secrets/root-ca.pem:ro
+#   - ./.ZBX_DB_CERT_FILE:/run/secrets/server-cert.pem:ro
+#   - ./.ZBX_DB_KEY_FILE:/run/secrets/server-key.pem:ro
   env_file:
    - .env_db_pgsql
   secrets:
@@ -144,7 +144,7 @@ networks:
     ipam:
       driver: default
       config:
-      - subnet: 172.16.238.0/24
+      - subnet: 172.144.238.0/24
   zbx_net_backend:
     driver: bridge
     driver_opts:
@@ -153,7 +153,7 @@ networks:
     ipam:
       driver: default
       config:
-      - subnet: 172.16.239.0/24
+      - subnet: 172.144.239.0/24
 
 secrets:
   POSTGRES_USER:
