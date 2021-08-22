@@ -39,4 +39,10 @@ docker-compose -f docker-compose-ubuntu-zabbix-psql-nginx.yml restart
 
 # Grafana - Connect to Postgres SQL
 ![image](https://user-images.githubusercontent.com/83763465/130351548-d9263593-3d44-4ea0-8c02-2eaebc4fa72d.png)
+|Item|Default Value|Remark|
+|-------------|-------------|-------------|
+|Host|postgres-server:5432|Use Docker Network DNS|
+|Database|zabbix|refer to .env_db_pgsql|
+|User|zabbix|refer to .POSTGRES_USER|
+|Password|zabbix|refer to .POSTGRES_PASSWORD|
 
