@@ -87,9 +87,9 @@ services:
 
  zabbix-agent:
   image: zabbix/zabbix-agent:ubuntu-5.4-latest
-  profiles:
-   - full
-   - all
+#  profiles:
+#   - full
+#   - all
   ports:
    - "10050:10050"
   volumes:
