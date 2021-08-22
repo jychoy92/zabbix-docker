@@ -45,10 +45,10 @@ grafana-cli plugins install alexanderzobnin-zabbix-app
 exit
 docker-compose -f docker-compose-ubuntu-zabbix-psql-nginx.yml restart
 ```
-![image](https://user-images.githubusercontent.com/83763465/130351264-1b8f07c8-90f6-40b7-9c37-9f47126351e6.png){:height="50%" width="50%"}
+![image](https://user-images.githubusercontent.com/83763465/130351264-1b8f07c8-90f6-40b7-9c37-9f47126351e6.png){:height="30%" width="30%"}
 
 Enable the Zabbix Plugin
-![image](https://user-images.githubusercontent.com/83763465/130352088-80764336-ac22-47cd-a2d7-016e600f76d8.png){:height="50%" width="50%"}
+![image](https://user-images.githubusercontent.com/83763465/130352088-80764336-ac22-47cd-a2d7-016e600f76d8.png){:height="30%" width="30%"}
 
 
 ## (Optional) Grafana - Add Datasource (Zabbix Plugin) 
