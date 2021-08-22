@@ -37,6 +37,10 @@ docker-compose -f docker-compose-ubuntu-zabbix-psql-nginx.yml restart
 ```
 ![image](https://user-images.githubusercontent.com/83763465/130351264-1b8f07c8-90f6-40b7-9c37-9f47126351e6.png)
 
+Enable the Zabbix Plugin
+![image](https://user-images.githubusercontent.com/83763465/130352088-80764336-ac22-47cd-a2d7-016e600f76d8.png)
+
+
 # Grafana - Connect to Postgres SQL
 ![image](https://user-images.githubusercontent.com/83763465/130351548-d9263593-3d44-4ea0-8c02-2eaebc4fa72d.png)
 |Item|Default Value|Remark|
