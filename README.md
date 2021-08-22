@@ -1,7 +1,7 @@
-## Compose the container
+# Compose the container
 docker-compose -f docker-compose-ubuntu-zabbix-psql-nginx.yml up -d
 
-## File Keys References
+# File Keys References
 | File  | Reference |
 | ------------- | ------------- |
 | .env_agent  | Zabbix Agent Environment Variables |
@@ -12,20 +12,17 @@ docker-compose -f docker-compose-ubuntu-zabbix-psql-nginx.yml up -d
 | .POSTGRES_PASSWORD  | Postgres SQL Password  |
 
 ** you can change all these environment variable accordingly. **
-# Default Postgres SQL USERNAME/Password
+
+## Default Postgres SQL USERNAME/Password
 |username|Password|
 |-------------|-------------|
 |zabbix|zabbix|
 
-## Zabbix
-http://<host_ip>
-
-Admin/zabbix
-
-## Grafana
-http://<host_ip>:3000
-
-admin/admin
+# Zabbix Grafana Portal Access
+|Portal|URL|Default Username|Default Password|
+|-------------|-------------|-------------|-------------|
+|Zabbix|http://<host_ip>|Admin|zabbix|
+|Grafana|http://<host_ip>:3000|admin|admin|
 
 ## Zabbix-Server's Zabbix Agent
 Change the zabbix-agent interface for zabbix-server to use Docker DNS "zabbix-agent"
