@@ -1,7 +1,8 @@
 version: '3.5'
 services:
  zabbix-server:
-  container_name: "zabbix-server"
+  container_name: "zabbix_server"
+  restart: "always"
   image: zabbix/zabbix-server-pgsql:ubuntu-5.4-latest
   ports:
    - "10051:10051"
