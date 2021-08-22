@@ -28,7 +28,17 @@ docker-compose -f docker-compose-ubuntu-zabbix-psql-nginx.yml up -d
 Change the zabbix-agent interface for zabbix-server to use Docker DNS "zabbix-agent"
 ![image](https://user-images.githubusercontent.com/83763465/130350449-f5f08b5e-d383-4d40-8d99-87383d55ea36.png)
 
-# Install Zabbix Plugin in Grafana
+# Grafana - Add Datasource (Zabbix Postgres SQL)
+![image](https://user-images.githubusercontent.com/83763465/130351548-d9263593-3d44-4ea0-8c02-2eaebc4fa72d.png)
+|Item|Default Value|Remark|
+|-------------|-------------|-------------|
+|Host|postgres-server:5432|Use Docker Network DNS|
+|Database|zabbix|refer to .env_db_pgsql|
+|User|zabbix|refer to .POSTGRES_USER|
+|Password|zabbix|refer to .POSTGRES_PASSWORD|
+
+# (Optional) Grafana - Install Zabbix Plugin
+Zabbix Plugin is not necessary but is good to have as it will help to get better query perfomance rather thn just the SQL DB itself. 
 ```
 docker container exec -it <container_name> bash
 grafana-cli plugins install alexanderzobnin-zabbix-app
@@ -41,12 +51,9 @@ Enable the Zabbix Plugin
 ![image](https://user-images.githubusercontent.com/83763465/130352088-80764336-ac22-47cd-a2d7-016e600f76d8.png)
 
 
-# Grafana - Connect to Postgres SQL
-![image](https://user-images.githubusercontent.com/83763465/130351548-d9263593-3d44-4ea0-8c02-2eaebc4fa72d.png)
-|Item|Default Value|Remark|
-|-------------|-------------|-------------|
-|Host|postgres-server:5432|Use Docker Network DNS|
-|Database|zabbix|refer to .env_db_pgsql|
-|User|zabbix|refer to .POSTGRES_USER|
-|Password|zabbix|refer to .POSTGRES_PASSWORD|
+## (Optional) Grafana - Add Datasource (Zabbix Plugin) 
+
+![image](https://user-images.githubusercontent.com/83763465/130352186-387ca46a-e2bc-4a20-8820-a769ae76c486.png)
+http://<zabbix_URL>/zabbix/api_jsonrpc.php
+
 
