@@ -1,7 +1,6 @@
 version: '3.5'
 services:
  zabbix-server:
-  container_name: "zabbix_server"
   restart: "always"
   image: zabbix/zabbix-server-pgsql:ubuntu-5.4-latest
   ports:
@@ -46,7 +45,6 @@ services:
    com.zabbix.os: "ubuntu"
 
  zabbix-web-nginx-pgsql:
-  container_name: "zabbix-web"
   image: zabbix/zabbix-web-nginx-pgsql:ubuntu-5.4-latest
   ports:
    - "80:8080"
@@ -89,7 +87,6 @@ services:
    com.zabbix.os: "ubuntu"
 
  zabbix-agent:
-  container_name: "zabbix-agent"
   image: zabbix/zabbix-agent:ubuntu-5.4-latest
 #  profiles:
 #   - full
@@ -120,7 +117,6 @@ services:
    com.zabbix.os: "ubuntu"
 
  postgres-server:
- container_name: "zabbix-psql"
   image: postgres:13-alpine
   volumes:
    - ./zbx_env/var/lib/postgresql/data:/var/lib/postgresql/data:rw
