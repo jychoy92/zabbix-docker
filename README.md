@@ -62,7 +62,8 @@ Enable the Zabbix Plugin
 <img src="https://user-images.githubusercontent.com/83763465/130352607-0a6393d0-4aea-4ca7-acc4-1875122cb16b.png" width="40%">  <img src="https://user-images.githubusercontent.com/83763465/130352683-36d6bbda-2bc1-4767-bc28-1dcbd206374b.png" width="40%" >
 ![image](https://user-images.githubusercontent.com/83763465/130353457-9999fc19-4273-4aa1-b423-ab6df875a133.png)
 
-<img src="https://user-images.githubusercontent.com/83763465/130353820-90244a00-8562-4f4c-bb66-c38a2376e78b.png" width="40%" >  <img src="hhttps://user-images.githubusercontent.com/83763465/130353808-ea218568-00d7-4a17-9737-33ce306d2ae4.png" width="40%" >
+### Assign Read-Only Access to "No access to the frontend" User Group
+<img src="hhttps://user-images.githubusercontent.com/83763465/130353808-ea218568-00d7-4a17-9737-33ce306d2ae4.png" width="40%" >
 
 
 ### Add Zabbix Plugin DataSource
