@@ -1,6 +1,7 @@
 version: '3.5'
 services:
  zabbix-server:
+  user: root
   restart: "always"
   image: zabbix/zabbix-server-pgsql:ubuntu-5.4-latest
   ports:
@@ -45,6 +46,7 @@ services:
    com.zabbix.os: "ubuntu"
 
  zabbix-web-nginx-pgsql:
+  user: root
   restart: "always"
   image: zabbix/zabbix-web-nginx-pgsql:ubuntu-5.4-latest
   ports:
@@ -88,6 +90,7 @@ services:
    com.zabbix.os: "ubuntu"
 
  zabbix-agent:
+  user: root
   restart: "always"
   image: zabbix/zabbix-agent:ubuntu-5.4-latest
   ports:
@@ -116,6 +119,7 @@ services:
    com.zabbix.os: "ubuntu"
 
  postgres-server:
+  user: root
   restart: "always"
   image: postgres:13-alpine
   volumes:
@@ -134,14 +138,15 @@ services:
      - pgsql-database
 
  grafana:
-  restart: "always"
+  user: root
+  restart: always
   image: grafana/grafana
   ports:
    - "3000:3000"
   volumes:
-   - ./grafana:/var/lib/grafana
+   - ./grafana/var/lib/grafana:/var/lib/grafana:rw
   networks:
-   - zbx_net_frontend
+   zbx_net_frontend:
 
 networks:
   zbx_net_frontend:
