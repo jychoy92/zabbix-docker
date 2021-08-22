@@ -133,6 +133,16 @@ services:
      - pgsql-server
      - pgsql-database
 
+ grafana:
+  restart: "always"
+  image: grafana/grafana
+  ports:
+   - "3000:3000"
+  volumes:
+   - ./grafana:/var/lib/grafana:rw
+  networks:
+   zbx_net_frontend:
+
 networks:
   zbx_net_frontend:
     driver: bridge
