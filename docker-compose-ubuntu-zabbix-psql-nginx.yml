@@ -139,7 +139,7 @@ services:
   ports:
    - "3000:3000"
   volumes:
-   - ./grafana:/var/lib/grafana:rw
+   - ./grafana:/var/lib/grafana
   networks:
    - zbx_net_frontend
 
