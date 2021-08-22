@@ -64,6 +64,6 @@ Enable the Zabbix Plugin
 
 ### Add Zabbix Plugin DataSource
 <img src="https://user-images.githubusercontent.com/83763465/130353543-22740c77-0bc2-4ddf-b743-c174d519bb4c.png" width="40%" >
-<code>http://<zabbix_url>/api_jsonrpc.php</code>
+<code>"http://<zabbix-url>/api_jsonrpc.php"</code>
 
 
