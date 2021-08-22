@@ -120,9 +120,6 @@ services:
   image: postgres:13-alpine
   volumes:
    - ./zbx_env/var/lib/postgresql/data:/var/lib/postgresql/data:rw
-#   - ./.ZBX_DB_CA_FILE:/run/secrets/root-ca.pem:ro
-#   - ./.ZBX_DB_CERT_FILE:/run/secrets/server-cert.pem:ro
-#   - ./.ZBX_DB_KEY_FILE:/run/secrets/server-key.pem:ro
   env_file:
    - .env_db_pgsql
   secrets:
@@ -135,6 +132,19 @@ services:
      - postgres-server
      - pgsql-server
      - pgsql-database
+ 
+ grafana:
+  image: grafana/grafana:latest
+  environment:
+   TZ: Asia/Singapore
+  ports:
+   - 3000:3000
+  volumes:
+   - ./grafana:/var/lib/grafana
+   - ./grafana/plugins:/var/lib/grafana/plugins
+  networks:
+    zbx_net_backend:
+    zbx_net_frontend:
 
 networks:
   zbx_net_frontend:
