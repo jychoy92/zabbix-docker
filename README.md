@@ -64,10 +64,12 @@ Enable the Zabbix Plugin
 
 ### Assign Read-Only Access to "No access to the frontend" User Group
 <img src="hhttps://user-images.githubusercontent.com/83763465/130353808-ea218568-00d7-4a17-9737-33ce306d2ae4.png" width="40%" >
+![image](https://user-images.githubusercontent.com/83763465/130353911-1a9fa929-9604-41be-9b2c-61d1bd8765d1.png)
 
-
-### Add Zabbix Plugin DataSource
+### Add Zabbix Plugin DataSource and Dashboard
 <img src="https://user-images.githubusercontent.com/83763465/130353543-22740c77-0bc2-4ddf-b743-c174d519bb4c.png" width="40%" >
 <code>"http://[zabbix-url]/api_jsonrpc.php"</code>
+
+![image](https://user-images.githubusercontent.com/83763465/130353960-26e1fcf0-ca37-48ea-ac78-4e468c96e4b6.png)
 
 
