@@ -11,6 +11,11 @@ docker-compose -f docker-compose-ubuntu-zabbix-psql-nginx.yml up -d
 | .POSTGRES_USER  | Postgres SQL User  |
 | .POSTGRES_PASSWORD  | Postgres SQL Password  |
 
+** you can change all these environment variable accordingly. **
+| Default Postgres SQL USERNAME/Password |
+|-------------|-------------|
+|zabbix|zabbix|
+
 ## Zabbix
 http://<host_ip>
 
