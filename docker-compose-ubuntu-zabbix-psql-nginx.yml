@@ -45,6 +45,7 @@ services:
    com.zabbix.os: "ubuntu"
 
  zabbix-web-nginx-pgsql:
+  restart: "always"
   image: zabbix/zabbix-web-nginx-pgsql:ubuntu-5.4-latest
   ports:
    - "80:8080"
@@ -87,10 +88,8 @@ services:
    com.zabbix.os: "ubuntu"
 
  zabbix-agent:
+  restart: "always"
   image: zabbix/zabbix-agent:ubuntu-5.4-latest
-#  profiles:
-#   - full
-#   - all
   ports:
    - "10050:10050"
   volumes:
@@ -117,6 +116,7 @@ services:
    com.zabbix.os: "ubuntu"
 
  postgres-server:
+  restart: "always"
   image: postgres:13-alpine
   volumes:
    - ./zbx_env/var/lib/postgresql/data:/var/lib/postgresql/data:rw
